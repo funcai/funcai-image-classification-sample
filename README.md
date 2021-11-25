@@ -50,3 +50,17 @@ docker run \
   funcai/funcai-train-image-classifier:latest
 ```
 This command will take some time (depending on your cpu). Have a cup of tea in the meantime :)
+
+#### 5. Try the model
+Now we can reap the rewards of our previous work. We can finally predict wether a picture is a cat or a dog. To do that,
+we enter the sail shell again and execute the `php artisan images:classify` command:
+```
+./vendor/bin/sail shell
+php artisan images:classify
+```
+We now see, that an example dog picture was successfully classified as a dog!
+
+#### 6. Make it your own
+To classify your own images, change the export script to export your own images and then retrain the model with the command from step 4. 
+
+> If you have any questions about how to train your own models, feel free to open a Github issue.
