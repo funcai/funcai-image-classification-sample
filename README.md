@@ -32,7 +32,7 @@ The cats-dogs dataset can be used to train a classifier which tells you if a giv
 #### 3. Generate the FuncAI export
 ```
 ./vendor/bin/sail shell
-php artisan export:images
+php artisan images:export
 ```
 Note that the export will take a while, because the images will be preprocessed for training.
 

@@ -13,7 +13,7 @@ class ExportImages extends Command
      *
      * @var string
      */
-    protected $signature = 'export:images';
+    protected $signature = 'images:export';
 
     /**
      * The console command description.
