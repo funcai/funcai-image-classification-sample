@@ -53,6 +53,8 @@ class ExportImages extends Command
 
         // This is the main FuncAI class we'll be using
         $ai = new ImageClassification();
+        $ai->setTask('cats_dogs');
+        $ai->setPerformance(ImageClassification::PERFORMANCE_BALANCED);
 
         // Add our training samples for cats and dogs
         foreach($cats as $cat) {
